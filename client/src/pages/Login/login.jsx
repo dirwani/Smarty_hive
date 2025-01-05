@@ -81,7 +81,7 @@ export default function Login() {
                                         <label className="form-check-label" htmlFor="form2Example3">Remember me</label>
                                     </div>
 
-                                    <div className="fw-bold"><Link to="/forgot-password" className="link-danger">Forgot Password? </Link> </div >
+                                    {/* <div className="fw-bold"><Link to="/forgot-password" className="link-danger">Forgot Password? </Link> </div > */}
 
                                 </div>
 
