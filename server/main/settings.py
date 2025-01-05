@@ -18,7 +18,7 @@ ALLOWED_HOSTS = []
 # ! APPS FROM THIS PROJECT
 PROJECT_APPS=[
     'authentication',
-    'forum'
+    # 'forum'
 ]
 
 

@@ -46,7 +46,7 @@ export default function Home() {
                 <Loading />
                 :
                 <div>
-                    <div className="col-lg-12">
+                    {/* <div className="col-lg-12">
                         <div className=''>
                             {questions ? questions.map((question) => (
                                 <QuestionCard
@@ -61,8 +61,8 @@ export default function Home() {
                                 />
                             )) : <div>No Data</div>}
                         </div>
-                    </div >
-
+                    </div > */}
+                    {/* 
                     <div className='mt-5 d-flex justify-content-center'>
                         <nav aria-label="...">
                             <ul className="pagination">
@@ -83,7 +83,7 @@ export default function Home() {
                                 </li>
                             </ul>
                         </nav>
-                    </div>
+                    </div> */}
                 </div >
             }
         </>
