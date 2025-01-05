@@ -41,8 +41,8 @@ export default function Login() {
                     <div className="row d-flex justify-content-center align-items-center h-100">
                         <div className="col-md-9 col-lg-6 col-xl-5">
                             <img
-                                src="/images/doremon.webp"
-                                className="img-fluid vh-100"
+                                src="/images/login.webp"
+                                className="img-fluid vh-50"
                                 alt="Sample"
                             />
                         </div>
