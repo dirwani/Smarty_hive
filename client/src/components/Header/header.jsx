@@ -32,7 +32,7 @@ export default function Header() {
                 <div className="row">
                     <div className="d-flex justify-content-between text-white">
                         <div className="d-flex justify-content-evenly col-lg-8 col-md-8 col-sm-10">
-                            {/* <div className="nav-item cursor-pointer" onClick={() => navigate('/ask-question')}>Ask  Question</div> */}
+                            <div className="nav-item cursor-pointer" onClick={() => navigate('/ask-question')}>Ask  Question</div>
                             <div className="nav-item">
                                 <form className="d-flex" role="search" onSubmit={handleSearchSubmit}>
                                     <input className="form-control me-2" type="search" placeholder="Search" value={searchText} onChange={(e) => setSearchText(e.target.value)} />

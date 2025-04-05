@@ -11,7 +11,7 @@ export default function Footer() {
                         <div className="row mt-3">
                             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                                 <h6 className="text-uppercase fw-bold mb-4">
-                                    <i className="fas fa-gem me-3"></i>Dora
+                                    <i className="fas fa-gem me-3"></i>Smarty Hive
                                 </h6>
                                 <p className="text-justify">
                                     This project is an interactive web application designed to facilitate discussions and collaboration among college students. Built using Django and React, the platform allows users to create posts, comment on discussions.
@@ -55,28 +55,12 @@ export default function Footer() {
                                 </p>
                             </div>
 
-                            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                                <h6 className="text-uppercase fw-bold mb-4">
-                                    Upcoming Features:
-                                </h6>
-                                <p>
-                                    User Profile Customization
-                                </p>
-                                <p>
-                                    Image Upload for Questions
-                                </p>
-
-                                <p>
-                                    Responsive And Attractive UI
-                                </p>
-
-                            </div>
                         </div>
                     </div>
                 </section>
 
                 <div className="text-center p-4" style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}>
-                    © 2021 Copyright: All rights reserved To 
+                    © 2025 Copyright: All rights reserved To Smarty Hive 
                 </div>
             </footer>
         </>

@@ -24,22 +24,14 @@ export function SideBar() {
                     </div>
                 </div>
                 <div>
-                    <div className='sem-option' >1st Semester</div>
-                    <div className='sem-option' >2nd Semester</div>
-                    <div className='sem-option' >3rd Semester</div>
-                    <div className='sem-option' >4th Semester</div>
-                    <div className='sem-option' >5th Semester</div>
-                    <div className='sem-option' >6th Semester</div>
-                    <div className='sem-option' >7th Semester</div>
-                    <div className='sem-option' >8th Semester</div>
-                    {/* <div onClick={() => routeBySemester('1st Semester')} className='sem-option' >1st Semester</div>
+                    <div onClick={() => routeBySemester('1st Semester')} className='sem-option' >1st Semester</div>
                     <div onClick={() => routeBySemester('2nd Semester')} className='sem-option' >2nd Semester</div>
                     <div onClick={() => routeBySemester('3rd Semester')} className='sem-option' >3rd Semester</div>
                     <div onClick={() => routeBySemester('4th Semester')} className='sem-option' >4th Semester</div>
                     <div onClick={() => routeBySemester('5th Semester')} className='sem-option' >5th Semester</div>
                     <div onClick={() => routeBySemester('6th Semester')} className='sem-option' >6th Semester</div>
                     <div onClick={() => routeBySemester('7th Semester')} className='sem-option' >7th Semester</div>
-                    <div onClick={() => routeBySemester('8th Semester')} className='sem-option' >8th Semester</div> */}
+                    <div onClick={() => routeBySemester('8th Semester')} className='sem-option' >8th Semester</div>
                 </div>
 
                 <div onClick={logoutClick} className="cursor-pointer">
