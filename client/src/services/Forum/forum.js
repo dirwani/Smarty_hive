@@ -70,4 +70,13 @@ export async function unlikeAnswer(questionId, answerId) {
     await api.delete(`api/forum/questions/${questionId}/answers/${answerId}/like/`);
 }
 
+export async function fetchAssignments() {
+    const res = await api.get(`api/assignments/`);
+    return res.data;
+}
+
+export async function deleteAssignments(assignmentId) {
+    await api.delete(`api/assignments/${assignmentId}/`)
+}
+
 

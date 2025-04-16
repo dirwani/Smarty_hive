@@ -40,6 +40,7 @@ export default function Header() {
                                     <button className="btn btn-success" type="submit">Search</button>
                                 </form>
                             </div>
+                            <div className="nav-item cursor-pointer" onClick={() => navigate('/assignments')}>Assignments</div>
                         </div>
 
                         <div className="d-flex justify-content-end col-lg-4 col-md-4 col-sm-2 ">

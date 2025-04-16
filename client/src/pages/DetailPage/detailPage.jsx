@@ -39,7 +39,6 @@ export default function DetailPage() {
     }, [])
 
 
-
     const handleDelete = () => {
         try {
             deleteQuestion(question.id)
@@ -154,7 +153,6 @@ export default function DetailPage() {
                             </form>
                         </div>
                     }
-
 
 
                     <div className="card">

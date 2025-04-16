@@ -13,6 +13,7 @@ import CreatePost from "../pages/CreatePost/post";
 import SemesterFilter from "../pages/Semester/semester";
 import SearchFilter from "../pages/SearchPage/serachPage";
 import { Structure } from "../layout/structure";
+import { Assignment } from "../pages/Assignment/assignment";
 
 
 function RegisterAndLogout() {
@@ -33,6 +34,7 @@ export default function RouteLayout() {
                 }>
                     <Route path="" element={<Home />} />
                     <Route path="/semester/:semester" element={<SemesterFilter />} />
+                    <Route path="/assignments" element={<Assignment/>} />
                 </Route>
 
                 <Route path="/question/:id" element={<ProtectedRoute> <DetailPage /> </ProtectedRoute>} />
