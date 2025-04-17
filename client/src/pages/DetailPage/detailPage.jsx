@@ -154,7 +154,6 @@ export default function DetailPage() {
                         </div>
                     }
 
-
                     <div className="card">
                         <h1 className="text-center">Answers</h1>
                         {answers && answers.map((answer) => (

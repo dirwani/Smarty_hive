@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { fetchAssignments, deleteAssignments } from "../../services/Forum/forum";
 import ToastMessage from "../../utils/toaster/toaster";
+import Assignment from "../../components/Assignment/assignment";
 
-export function Assignment() {
+export function AssignmentRoute() {
     const [assignments, setAssignments] = useState([]);
-    const [isDeleting, setIsDeleting] = useState(false);
 
     useEffect(() => {
         async function fetchData() {
@@ -19,6 +19,7 @@ export function Assignment() {
 
         fetchData();
     }, []);
+
 
     const handleAssignmentDelete = (id) => {
         try {
@@ -40,28 +41,13 @@ export function Assignment() {
             ) : (
                 <div className="row">
                     {assignments.map((assignment) => (
-                        <div key={assignment.id} className="col-md-6 mb-4">
-                            <div className="card bg-dark border-light h-100 shadow-sm text-white">
-                                <div className="card-body">
-                                    <h5 className="card-title text-warning">{assignment.title}</h5>
-                                    <p className="card-text">{assignment.description}</p>
-                                    <p className="card-text">
-                                            Submission Date:{" "}
-                                            {new Date(assignment.submission_date).toLocaleDateString()}
-                                    </p>
-                                    <button className="btn btn-danger" onClick={() => setIsDeleting(!isDeleting)}>Delete</button> 
-
-                                    {isDeleting &&
-                                        <div>
-                                            <div>Do you want to delete?</div>
-                                            <div className="btn btn-primary" onClick={() => setIsDeleting(!isDeleting)}>Cancel</div>
-                                            <div className="btn btn-danger" onClick={handleAssignmentDelete(assignment.id)}>Confirm</div>
-                                        </div>
-                                    }
-
-                                </div>
-                            </div>
-                        </div>
+                            <Assignment
+                                key={assignment.id}
+                                title={assignment.title}
+                                description={assignment.description}
+                                submission_date={assignment.submission_date}
+                                onAssignmentDelete={() => handleAssignmentDelete(assignment.id)}
+                            />
                     ))}
                 </div>
             )}
